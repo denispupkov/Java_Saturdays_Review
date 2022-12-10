@@ -19,6 +19,7 @@ public class Person {
     public void setName(String name) {
         if (name.isEmpty() || name==null) {
             System.out.println("The name cannot be empty or null");
+            System.out.println("");
             System.exit(1);
         }
         this.name = name;
