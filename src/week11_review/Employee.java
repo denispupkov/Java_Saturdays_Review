@@ -43,4 +43,18 @@ public class Employee extends Person{
         }
         this.salary = salary;
     }
+
+    public void work () {
+        System.out.println(getName()+" is working");
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName()+"{" +
+                super.toString()+
+                "employeeId='" + employeeId + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
