@@ -17,7 +17,7 @@ public class Person {
     }
 
     public void setName(String name) {
-        if (name.isEmpty() || name==null) {
+        if (name==null || name.isEmpty() ) {
             System.out.println("The name cannot be empty or null");
             System.out.println("");
             System.exit(1);
@@ -50,6 +50,6 @@ public class Person {
         return
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", gender=" + gender + '\'' ;
+                ", gender=" + gender + '\'';
     }
 }

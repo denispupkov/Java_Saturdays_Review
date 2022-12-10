@@ -17,6 +17,10 @@ public class Employee extends Person{
     }
 
     public void setEmployeeId(String employeeId) {
+        if ( employeeId==null || employeeId.isEmpty() ) {
+            System.err.println("Employee cannot be null ot empty");
+            System.exit(1);
+        }
         this.employeeId = employeeId;
     }
 
